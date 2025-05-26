@@ -6,7 +6,7 @@ let heartInterval;
 let starInterval;
 
 const totalTime = 251; // duração da música
-const music = document.getElementById('background-music');
+const music = document.getElementById('musica');
 
 // Elementos do DOM
 const initialScreen = document.getElementById('initial-screen');
