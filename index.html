@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Vida Toda</title>
+    <meta name="description" content="Nossa História de Amor">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Corações -->
+    <div id="falling-hearts" class="falling-hearts-container"></div>
+    <div id="twinkling-stars" class="twinkling-stars-container"></div>
+
+    <!-- Tela Inicial -->
+    <div id="initial-screen" class="screen active">
+        <div class="center-content">
+            <button id="start-button" class="romantic-button">
+                <span class="heart">💖</span>
+                <span class="text">Clique aqui para ver nossa história...</span>
+                <span class="heart">💖</span>
+                <div class="floating-decoration top-left">💕</div>
+                <div class="floating-decoration top-right">✨</div>
+                <div class="floating-decoration bottom-right">💖</div>
+                <div class="floating-decoration bottom-left">⭐</div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Tela de História -->
+    <div id="story-screen" class="screen">
+        <!-- Player -->
+        <div class="music-player">
+            <div class="player-content">
+                <div class="album-cover"><span class="music-icon">🎵</span></div>
+                <div class="song-info">
+                    <h3 class="song-title">Die With a Smile</h3>
+                    <p class="artist">Bruno Mars & Lady Gaga</p>
+                    <div class="progress-container">
+                        <span class="time current-time">0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="time total-time">4:11</span>
+                    </div>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn">⏮️</button>
+                    <button id="play-pause-btn" class="play-btn">▶️</button>
+                    <button class="control-btn">⏭️</button>
+                    <button class="control-btn">🔊</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <div class="story-header">
+                <h1 class="main-title">Nossa História</h1>
+                <div class="date-container">
+                    <p class="date-label">Começou em</p>
+                    <p class="start-date">08 de Setembro de 2024</p>
+                </div>
+            </div>
+
+            <div class="live-counter">
+                <h3 class="counter-title">Juntos há</h3>
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <div class="counter-number" id="days">0</div>
+                        <div class="counter-label">Dias</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" id="hours">0</div>
+                        <div class="counter-label">Horas</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" id="minutes">0</div>
+                        <div class="counter-label">Minutos</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" id="seconds">0</div>
+                        <div class="counter-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria dinâmica -->
+            <div class="photo-gallery" id="photo-gallery"></div>
+
+            <!-- Frases aleatórias -->
+            <div class="quotes-section" id="quotes-section"></div>
+
+            <!-- Mensagem final -->
+            <div class="final-message">
+                <h2 class="final-title">Minha Vida Toda</h2>
+                <p class="final-text">
+                    "É você que eu quero ao meu lado para sempre, 
+                    em cada amanhecer, em cada pôr do sol, 
+                    em cada momento que a vida nos reservar."
+                </p>
+                <div class="final-hearts">
+                    <span class="floating-heart">💖</span>
+                    <span class="floating-heart">✨</span>
+                    <span class="floating-heart">💕</span>
+                    <span class="floating-heart">⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Áudio -->
+    <audio id="background-music" src="Songs/music.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
